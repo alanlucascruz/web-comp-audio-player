@@ -1,1 +1,3 @@
-[Pré-visualização disponível aqui](https://alanlucascruz.github.io/web-comp-audio-player/)
+#Demonstração
+
+[Clique aqui para ver uma demonstração](https://alanlucascruz.github.io/web-comp-audio-player/)
