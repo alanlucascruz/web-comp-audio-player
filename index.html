@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avance Dev • Audio Player</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <audio id="audio-player"></audio>
+
+        <h2 id="music-name" class="music-name"></h2>
+        <p id="music-author" class="music-author"></p>
+
+        <div class="player-progress">
+          <div class="progress-values">
+            <span id="player-current-time">--:--</span>
+            <span id="player-duration">--:--</span>
+          </div>
+          <progress id="player-progress"></progress>
+        </div>
+
+        <div class="player-buttons">
+          <button id="btn-prev" class="btn btn-prev">
+            <i class="bi bi-rewind-fill"></i>
+          </button>
+          <button id="btn-play" class="btn btn-play">
+            <i id="btn-play-icon" class="bi bi-play-fill"></i>
+          </button>
+          <button id="btn-next" class="btn btn-next">
+            <i class="bi bi-fast-forward-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
