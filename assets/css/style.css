@@ -172,9 +172,6 @@ body {
     box-shadow: none;
     padding: 24px;
   }
-  .player-buttons {
-    margin-top: 32px;
-  }
   .player-buttons .btn {
     width: 42px;
     height: 42px;

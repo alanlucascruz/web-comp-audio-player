@@ -106,7 +106,7 @@ const changeVolume = () => {
 
   audioPlayer.volume = value;
 
-  if (value === 0) {
+  if (value == 0) {
     btnVolumeIcon.classList.replace("bi-volume-up-fill", "bi-volume-mute-fill");
   } else {
     btnVolumeIcon.classList.replace("bi-volume-mute-fill", "bi-volume-up-fill");
