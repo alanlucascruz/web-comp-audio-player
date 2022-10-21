@@ -28,18 +28,22 @@
       <div class="player">
         <audio id="audio-player"></audio>
 
-        <h2 id="music-name" class="music-name"></h2>
-        <p id="music-author" class="music-author"></p>
+        <h2 id="song-name" class="song-name"></h2>
+        <p id="song-author" class="song-author"></p>
 
         <div class="player-progress">
           <div class="progress-values">
             <span id="player-current-time">--:--</span>
             <span id="player-duration">--:--</span>
           </div>
-          <progress id="player-progress"></progress>
+          <!-- <progress id="player-progress"></progress> -->
+          <input type="range" id="player-progress" value="50" />
         </div>
 
         <div class="player-buttons">
+          <button id="btn-repeat" class="btn btn-repeat">
+            <i class="bi bi-repeat"></i>
+          </button>
           <button id="btn-prev" class="btn btn-prev">
             <i class="bi bi-rewind-fill"></i>
           </button>
@@ -49,6 +53,23 @@
           <button id="btn-next" class="btn btn-next">
             <i class="bi bi-fast-forward-fill"></i>
           </button>
+
+          <div class="dropdown">
+            <button id="btn-volume" class="btn btn-volume">
+              <i class="bi bi-volume-up-fill"></i>
+            </button>
+
+            <div class="dropdown-content">
+              <input
+                type="range"
+                id="player-volume"
+                value="1"
+                min="0"
+                max="1"
+                step="0.01"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
